@@ -541,6 +541,20 @@
 	};
 	
 	/**
+	 *	Converts the background color to a JSON object.
+	 */
+	$.fn.getBackgroundColor = function() {
+		return $.convertColorToJSON(this.css("background-color"));
+	};
+	
+	/**
+	 *	Converts the font color to a JSON object.
+	 */
+	$.fn.getFontColor = function() {
+		return $.convertColorToJSON(this.css("color"));
+	};
+	
+	/**
 	 *	Calculates the luminance of the background color.
 	 */
 	$.fn.backgroundLuminance = function() {
